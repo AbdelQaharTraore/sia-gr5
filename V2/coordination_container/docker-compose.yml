@@ -1,0 +1,23 @@
+version: '3'
+services:
+  coordination-service:
+    build: .
+    ports:
+      - "5001:5000"
+    networks:
+      - robot-network
+  light-service:
+    image: light-seeker
+    ports:
+      - "5002:5000"
+    networks:
+      - robot-network
+  obstacle-service:
+    image: obstacle-avoider
+    ports:
+      - "5003:5000"
+    networks:
+      - robot-network
+networks:
+  robot-network:
+    driver: bridge

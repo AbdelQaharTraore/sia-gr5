@@ -1,0 +1,50 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/k-team/khepera2/protos/Khepera2.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  fieldOfView 1
+  orientation 0.32546260566243895 0.25781802046443997 -0.9097274100735964 1.9210228342202313
+  position 1.034298555122865 3.821304348567524 3.0214045344879796
+  exposure 0.01
+  followType "Mounted Shot"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  luminosity 0
+}
+RectangleArena {
+  floorSize 4 4
+}
+PointLight {
+  attenuation 0 0 1
+  intensity 10
+  location 1.5 1.5 0.1
+}
+CardboardBox {
+  translation -1 0 0.15
+  name "cardboard box_1"
+  size 0.3 0.3 0.3
+}
+CardboardBox {
+  translation 1.3 -1.3 0.15
+  name "cardboard box_2"
+  size 0.3 0.3 0.3
+}
+Khepera2 {
+  translation 0.0368438 -0.0180975 0
+  rotation 0 0 1 1.23881
+  controller "braitenberg_2"
+}
+CardboardBox {
+  translation 0.8 0.8 0.15
+  name "cardboard box_3"
+  size 0.3 0.3 0.3
+}

@@ -1,0 +1,6 @@
+version: '3'
+services:
+  light_seeker:
+    build: .
+    ports:
+      - "5000:5000"
